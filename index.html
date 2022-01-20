@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css">
+    <title>Smooth Scrolling</title>
+</head>
+<body>
+    <div class="container">
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="#header">Header</a>
+                </li>
+
+                <li>
+                    <a href="#section">Section</a>
+                </li>
+
+                <li>
+                    <a href="#Main">Main</a>
+                </li>
+
+                <li>
+                    <a href="#footer">footer</a>
+                </li>                
+            </ul>
+        </nav>
+        <header id="header">
+            <h2>header</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, repudiandae numquam. Pariatur reprehenderit quisquam facilis sit natus tenetur? Voluptatum, eligendi omnis sunt dolore atque rem libero et repudiandae ipsam ex aut, fuga ducimus quis autem unde. Accusamus iusto, quae magnam vitae totam impedit eligendi, minima blanditiis at neque earum nemo?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quidem illum itaque quod culpa, sit at laboriosam quos nostrum optio recusandae sed consequatur officia architecto nulla provident modi impedit dolores fugiat a sint quo placeat. Quae, dicta ex eaque dolorum voluptate nemo reiciendis sequi quibusdam tenetur tempora natus quasi reprehenderit minima odio velit animi! Laudantium magnam quas consequatur tenetur voluptas?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat soluta accusantium expedita magnam maiores modi, repudiandae molestias illo architecto ad eum nam beatae cum sapiente impedit recusandae sed nisi eveniet enim similique accusamus? Recusandae, velit unde enim autem in veritatis.</p>
+        </header>
+        <section id="section">
+            <h2>Section</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos aliquid reiciendis dolor cum consectetur neque sed, molestias cumque atque inventore, officiis temporibus. Hic vel reprehenderit natus nisi voluptatem, quo debitis!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem non quas perspiciatis sed animi aliquam temporibus, sit nemo minus incidunt rerum qui autem veniam quo aperiam vel nam corporis dicta facere maxime eaque perferendis reprehenderit? Consequuntur, perferendis, officia numquam fuga odio quisquam voluptate deleniti quam in fugit nisi quae, harum et quaerat eligendi amet asperiores nihil cumque dolorum aliquid! Incidunt, obcaecati a? Cum quis laborum, voluptatibus reiciendis repellendus sapiente dolore?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem voluptatem fuga aperiam rerum maxime earum, suscipit officia, quasi eveniet qui totam et voluptates aliquam, dolore hic mollitia? Ex nisi veritatis accusantium sint fugit unde quos expedita nostrum earum repellat suscipit sed sit delectus provident illo repellendus commodi quod, possimus fuga.</p>
+        </section>
+
+        <section id="main">
+            <h2>Main</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos aliquid reiciendis dolor cum consectetur neque sed, molestias cumque atque inventore, officiis temporibus. Hic vel reprehenderit natus nisi voluptatem, quo debitis!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem non quas perspiciatis sed animi aliquam temporibus, sit nemo minus incidunt rerum qui autem veniam quo aperiam vel nam corporis dicta facere maxime eaque perferendis reprehenderit? Consequuntur, perferendis, officia numquam fuga odio quisquam voluptate deleniti quam in fugit nisi quae, harum et quaerat eligendi amet asperiores nihil cumque dolorum aliquid! Incidunt, obcaecati a? Cum quis laborum, voluptatibus reiciendis repellendus sapiente dolore?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem voluptatem fuga aperiam rerum maxime earum, suscipit officia, quasi eveniet qui totam et voluptates aliquam, dolore hic mollitia? Ex nisi veritatis accusantium sint fugit unde quos expedita nostrum earum repellat suscipit sed sit delectus provident illo repellendus commodi quod, possimus fuga.</p>
+        </section>
+        <footer id="footer">
+            <h2>Footer</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti, incidunt placeat repellendus delectus pariatur debitis iste praesentium voluptatum a ea optio possimus in cumque magnam perspiciatis quaerat reiciendis aliquam? Qui architecto quibusdam, delectus, nam velit ab ea iure mollitia ipsam amet ullam omnis nihil quisquam reprehenderit id sint autem! Saepe consequatur, eligendi accusamus dicta nihil similique assumenda ipsam, quisquam cupiditate hic et. Nulla rem vitae debitis quas ipsa, temporibus odio?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel ut quidem, ex minima, non officia molestiae tenetur explicabo odit voluptas aut, delectus sequi iste doloremque aspernatur dignissimos ipsum veniam tempora ipsam. Obcaecati cum ad est commodi, totam corporis officiis accusantium doloribus illum, ratione id quod! Sit pariatur maxime hic odit?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, accusamus. Sapiente hic illum, reprehenderit, placeat in voluptatem est cum, qui aut omnis fugiat sed. Voluptatum obcaecati sed voluptatem et, iste illum ipsa quibusdam veritatis deserunt delectus autem distinctio placeat, mollitia recusandae perspiciatis voluptas, eos maxime odit ipsum. Commodi, expedita quidem.</p>
+        </footer>
+    </div>
+
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/smooth-scroll.min.js"></script>
+    <script src="js/smooth-scroll.polyfills.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            var scroll = new SmoothScroll('a[href*="#"]', {
+	            speed: 2000
+            });
+        });
+    </script>
+</body>
+</html>
